@@ -36,6 +36,7 @@ body {
   Chame-se essa propriedade de Shot reand(atalho)*/
 
   background:var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 
 body * {
@@ -178,3 +179,14 @@ ul li a{
   }
 
   /*<img src="assents/moon-stars.svg" alt="Lua com estrelas">Pode ser usada para adiconar no botão*/
+
+  /* media queries */
+  @media (min-width:700px) {
+    :root {
+        --bg-url: url(./assents/bg-desktop.jpg);
+    }
+
+    .ligth {
+      --bg-url: url(./assents/bg-destok-light.jpg);
+    }
+   }
